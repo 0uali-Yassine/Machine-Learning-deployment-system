@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/build_executable.py
+src/main.py
+src/backend.egg-info/PKG-INFO
+src/backend.egg-info/SOURCES.txt
+src/backend.egg-info/dependency_links.txt
+src/backend.egg-info/requires.txt
+src/backend.egg-info/top_level.txt
+src/model/build_core_model.py
