@@ -1,5 +1,6 @@
 # Python Model Predictor Standalone Executable
 
+## OUSSAMA
 Standalone Python executable for building and using a trained model.
 Can be called from Node.js or from the command line, in any machine.
 Without any dependencies or Python installation.
