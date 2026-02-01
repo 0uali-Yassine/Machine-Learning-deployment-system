@@ -13,6 +13,7 @@ with mp_face_detection.FaceDetection(
     model_selection=0, min_detection_confidence=0.5) as face_detection:
     
     print("Appuyez sur 'q' pour quitter.")
+    print("Appuyez sur 'q' pour quitter.")
 
     while cap.isOpened():
         success, image = cap.read()
@@ -30,6 +31,7 @@ with mp_face_detection.FaceDetection(
                 mp_drawing.draw_detection(image, detection)
 
         # Affichage
+        
         cv2.imshow('Detection de Visage - MediaPipe', image)
 
         if cv2.waitKey(5) & 0xFF == ord('q'):
