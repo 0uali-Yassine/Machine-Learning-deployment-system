@@ -32,6 +32,7 @@ def build_executable():
     # uv run pyinstaller --onefile --name predict --add-data "src/model/core_model.pkl:." src/main.py
 
     # Build PyInstaller command - much simpler with --collect-all
+    
     cmd = [
         "uv", "run", "pyinstaller",
         "--onefile",
