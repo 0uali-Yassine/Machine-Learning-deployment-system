@@ -67,6 +67,7 @@ def main():
             'success': False,
             'error': f'Invalid area value: {sys.argv[1]}. Must be a number.'
         }
+        
         print(json.dumps(output))
         sys.exit(1)
 
