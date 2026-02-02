@@ -27,6 +27,7 @@ def load_model(model_path):
         return None, f"Error loading model: {str(e)}"
 
 
+
 def predict(model, area):
     """Make a prediction using the loaded model."""
     try:
@@ -34,6 +35,7 @@ def predict(model, area):
         return float(prediction[0]), None
     except Exception as e:
         return None, f"Error making prediction: {str(e)}"
+
 
 
 def get_resource_path(relative_path):
@@ -46,6 +48,7 @@ def get_resource_path(relative_path):
         base_path = Path(__file__).parent
 
     return base_path / relative_path
+
 
 
 def main():

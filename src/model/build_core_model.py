@@ -47,9 +47,11 @@ def get_trained_model():
         return None
 
 
+
 # ============================================================================
 # * Save Trained Model Using pickle
 # ============================================================================
+
 
 def save_model_using_pickle():
     """Save the trained model using pickle."""
@@ -60,6 +62,7 @@ def save_model_using_pickle():
         print("\nModel saved using pickle")
     except Exception as e:
         print(f"Error saving model using pickle: {e}")
+
 
 
 def load_model_using_pickle():
@@ -75,9 +78,11 @@ def load_model_using_pickle():
         return None
 
 
+
 # ============================================================================
 # * Save Trained Model Using joblib
 # ============================================================================
+
 
 def save_model_using_joblib():
     """Save the trained model using joblib."""
@@ -92,6 +97,7 @@ def save_model_using_joblib():
         print(f"Error saving model using joblib: {e}")
 
 
+
 def load_model_using_joblib():
     """Load the trained model using joblib."""
     try:
@@ -103,6 +109,7 @@ def load_model_using_joblib():
     except Exception as e:
         print(f"Error loading model using joblib: {e}")
         return None
+
 
 
 def main():
