@@ -15,8 +15,6 @@ project_root = Path(__file__).parent
 main_script_path = project_root / "main.py"
 model_file_path = project_root / "model" / "core_model.pkl"
 
-
-
 def build_executable():
     """Build the standalone executable."""
 
@@ -29,14 +27,9 @@ def build_executable():
         print(f"Error: {model_file_path} not found!")
         sys.exit(1)
 
-    
     # Example command:
-    
     # uv run pyinstaller --onefile --name predict --add-data "src/model/core_model.pkl:." src/main.py
-
-    
     # Build PyInstaller command - much simpler with --collect-all
-    
     cmd = [
         "uv", "run", "pyinstaller",
         "--onefile",
@@ -56,7 +49,6 @@ def build_executable():
     print()
 
     # Run the command
-
     start_time = time.time()
     result = subprocess.run(cmd, cwd=project_root)
     build_time = time.time() - start_time
@@ -70,7 +62,6 @@ def build_executable():
         sys.exit(1)
 
     cleanup_build_shit()
-
 
 
 def cleanup_build_shit():
