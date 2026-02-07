@@ -46,12 +46,9 @@ def get_trained_model():
         print(f"Error training model: {e}")
         return None
 
-
-
 # ============================================================================
 # * Save Trained Model Using pickle
 # ============================================================================
-
 
 def save_model_using_pickle():
     """Save the trained model using pickle."""
@@ -62,7 +59,6 @@ def save_model_using_pickle():
         print("\nModel saved using pickle")
     except Exception as e:
         print(f"Error saving model using pickle: {e}")
-
 
 
 def load_model_using_pickle():
@@ -77,12 +73,9 @@ def load_model_using_pickle():
         print(f"Error loading model using pickle: {e}")
         return None
 
-
-
 # ============================================================================
 # * Save Trained Model Using joblib
 # ============================================================================
-
 
 def save_model_using_joblib():
     """Save the trained model using joblib."""
@@ -95,7 +88,6 @@ def save_model_using_joblib():
 
     except Exception as e:
         print(f"Error saving model using joblib: {e}")
-
 
 
 def load_model_using_joblib():
@@ -111,13 +103,11 @@ def load_model_using_joblib():
         return None
 
 
-
 def main():
     """Main function to build the core model and save it using pickle or joblib."""
 
     while True:
         # If no argument, prompt user
-       
         print("🤖 Model Builder")
         print("💾 1) Save with pickle")
         print("💾 2) Save with joblib")
